@@ -44,14 +44,38 @@ a {
     border: none;
 }
 
-.col {
-    font-size: 30px;
-}
+  .fs-hover:hover {
+    color: #0d6efd;
+    transition-duration: 500ms;
+    transition-delay: 250ms;
 
-.footer-title {
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 50px;
-}
+  }
 
+.card_scale {
+    position: relative;
+    transform: scale(1);
+    transition-duration: 500ms;
+    transition-delay: 250ms;
+  }
+
+  .card_scale:hover {
+    transform: scale(1.1);
+ 
+  }
+
+  .card_scale:hover a.buy {
+    transform: scale(1);
+    opacity: 1;
+    transition-duration: 500ms;
+    transition-delay: 250ms;
+  }
+  
+
+  .buy {
+    position: absolute;
+    bottom: 15px;
+    left: 35%;
+   
+    transform: scale(0);
+    opacity: 0;
+  }
